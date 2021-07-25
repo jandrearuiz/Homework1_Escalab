@@ -1,0 +1,46 @@
+.menu {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 50px;
+
+  &__item {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--c-lightblue);
+    text-shadow: 2px 2px 2px var(--c-black);
+
+    &:hover .submenu {
+      display: block;
+    }
+  }
+}
+.submenu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  right: -50px;
+
+  &__item {
+    background: var(--c-orange);
+    padding: 10px 30px;
+    font-weight: initial;
+    text-shadow: initial;
+    text-align: center;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background: var(--c-bluer);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--c-white);
+    transition: color .3s ease;
+
+    &:hover {
+      color: var(--c-darkblue);
+    }
+  }
+}

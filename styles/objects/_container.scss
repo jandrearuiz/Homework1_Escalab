@@ -1,6 +1,12 @@
 .container {
+  display: flex;
+
   &__title {
     background: var(--c-blue);
     color: var(--c-white);
+  }
+
+  &__image {
+    width: 40%;
   }
 }

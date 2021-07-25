@@ -1,8 +1,18 @@
 :root {
-  --c-blue: #4343ac;  
-  --c-white: #ffffff; 
+  --c-blue: #4343ac;
+  --c-lightblue: #09809e;
+  --c-darkblue: #10343D;
+  --c-bluer: #3dc7eb;
+  --c-white: #ffffff;
   --c-orange: #ffa500;
   --c-pink: #b36874;
-  --f-prymary:'Roboto';
+  --c-black: #000000;
+  --f-prymary: "Indie Flower";
   --f-size: 16px;
 }
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+$xxlarge: 1400px;

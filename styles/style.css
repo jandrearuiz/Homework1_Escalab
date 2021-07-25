@@ -1,9 +1,14 @@
 :root {
   --c-blue: #4343ac;
+  --c-lightblue: #09809e;
+  --c-darkblue: #10343D;
+  --c-bluer: #3dc7eb;
   --c-white: #ffffff;
   --c-orange: #ffa500;
   --c-pink: #b36874;
-  --f-prymary:'Roboto';
+  --c-black: #000000;
+  --f-prymary: "Indie Flower";
+  --f-size: 16px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -349,8 +354,39 @@ template {
   display: none;
 }
 
-.head__title {
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: var(--c-orange);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+}
+
+.principal__title {
+  margin-left: 1%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: var(--c-white);
+  text-shadow: 2px 2px 2px var(--c-black);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container__title {
@@ -358,11 +394,73 @@ template {
   color: var(--c-white);
 }
 
+.container__image {
+  width: 40%;
+}
+
 .social {
   background: var(--c-pink);
 }
 
 body {
+  font-size: var(--f-size);
   font-family: var(--f-prymary), sans-serif;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 1%;
+}
+
+.menu {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 50px;
+}
+
+.menu__item {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--c-lightblue);
+  text-shadow: 2px 2px 2px var(--c-black);
+}
+
+.menu__item:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  right: -50px;
+}
+
+.submenu__item {
+  background: var(--c-orange);
+  padding: 10px 30px;
+  font-weight: initial;
+  text-shadow: initial;
+  text-align: center;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.submenu__item:hover {
+  background: var(--c-bluer);
+}
+
+.submenu__link {
+  text-decoration: none;
+  color: var(--c-white);
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.submenu__link:hover {
+  color: var(--c-darkblue);
 }
 /*# sourceMappingURL=style.css.map */
