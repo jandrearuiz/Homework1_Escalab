@@ -1,0 +1,11 @@
+.main {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width:$large) {
+    :last-child {
+      flex-direction: row-reverse;
+    }
+  }
+}
