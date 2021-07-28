@@ -1,0 +1,27 @@
+.content {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  background: var(--c-two);
+  border-radius: 25px;
+
+
+  &__title {
+    color: var(--c-three);
+    text-shadow: 1px 2px 2px black;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 2% 1% 1%;
+  }
+
+  &__description {
+    padding: 3%;
+    margin: 0;
+    line-height: 1.5;
+    color: var(--c-white);
+    font-size: 1.2rem;
+  }
+}

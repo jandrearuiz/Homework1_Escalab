@@ -1,11 +1,7 @@
 .main {
-  margin-top: 2%;
   display: flex;
   flex-direction: column;
-
-  @media (min-width:$large) {
-    :last-child {
-      flex-direction: row-reverse;
-    }
-  }
+  background: var(--c-five);
+  background-image: url(/assets/fondo.jpg);
+  padding-top: 2%;
 }
