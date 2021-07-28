@@ -461,7 +461,7 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   background: var(--c-five);
-  background-image: url(/assets/fondo.jpg);
+  background-image: url(../assets/fondo.jpg);
   padding-top: 2%;
 }
 
