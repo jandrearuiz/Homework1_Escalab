@@ -1,0 +1,14 @@
+.social {
+  font-size: 2.2rem;
+  text-align: center;
+
+  &__link {
+    color: var(--c-white);
+    text-shadow: 2px 2px 2px var(--c-black);
+    transition: color .3s ease;
+
+    &:hover {
+      color: var(--c-bluer);
+    }
+  }
+}

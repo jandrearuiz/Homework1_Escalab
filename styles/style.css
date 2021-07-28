@@ -387,7 +387,7 @@ template {
       align-self: center;
   color: var(--c-white);
   text-shadow: 2px 2px 2px var(--c-black);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .container {
@@ -452,10 +452,6 @@ template {
   }
 }
 
-.social {
-  background: var(--c-pink);
-}
-
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,6 +463,72 @@ template {
   background: var(--c-five);
   background-image: url(/assets/fondo.jpg);
   padding-top: 2%;
+}
+
+.footer {
+  background: var(--c-orange);
+  margin: 0;
+  padding: 0.5%;
+}
+
+.option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.option__item {
+  list-style: none;
+  width: 45%;
+  padding: 1%;
+  border-radius: 25px;
+  text-align: center;
+  background: var(--c-darkblue);
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.option__item:hover {
+  background: radial-gradient(var(--c-five) 20%, var(--c-black) 80%);
+}
+
+@media (min-width: 992px) {
+  .option__item {
+    width: 20%;
+    margin: 0.5%;
+  }
+}
+
+.option__link {
+  color: var(--c-white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.option__link:hover {
+  color: var(--c-black);
+}
+
+@media (min-width: 992px) {
+  .option {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body {
@@ -561,5 +623,21 @@ body {
 
 .submenu__link:hover {
   color: var(--c-darkblue);
+}
+
+.social {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.social__link {
+  color: var(--c-white);
+  text-shadow: 2px 2px 2px var(--c-black);
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.social__link:hover {
+  color: var(--c-bluer);
 }
 /*# sourceMappingURL=style.css.map */
